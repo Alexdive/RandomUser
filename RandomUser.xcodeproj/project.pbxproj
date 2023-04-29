@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D39BC2629FCF20900CCE235 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D39BC2529FCF20900CCE235 /* ImageDownloader.swift */; };
 		0D7C791029F27E2C000CAE27 /* UITextField+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7C790F29F27E2C000CAE27 /* UITextField+Combine.swift */; };
 		0D7C791229F27EA2000CAE27 /* UITextField+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7C791129F27EA2000CAE27 /* UITextField+Image.swift */; };
 		0D7C791429F27F6B000CAE27 /* UIButton+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7C791329F27F6B000CAE27 /* UIButton+BackgroundColor.swift */; };
@@ -59,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D39BC2529FCF20900CCE235 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		0D7C790F29F27E2C000CAE27 /* UITextField+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Combine.swift"; sourceTree = "<group>"; };
 		0D7C791129F27EA2000CAE27 /* UITextField+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Image.swift"; sourceTree = "<group>"; };
 		0D7C791329F27F6B000CAE27 /* UIButton+BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+BackgroundColor.swift"; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				0D92E1E829F4224F00FACDFC /* NetworkService.swift */,
 				0D92E1DF29F3BCCE00FACDFC /* Persistence.swift */,
 				0D92E1E129F3BD1000FACDFC /* UserDefaultPersister.swift */,
+				0D39BC2529FCF20900CCE235 /* ImageDownloader.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				0D7C791A29F2AA0D000CAE27 /* PresentationModels.swift in Sources */,
 				0D7C791029F27E2C000CAE27 /* UITextField+Combine.swift in Sources */,
 				0D92E1E429F3BD5000FACDFC /* Credentials.swift in Sources */,
+				0D39BC2629FCF20900CCE235 /* ImageDownloader.swift in Sources */,
 				0D92E1D529F2D53100FACDFC /* AppCoordinator.swift in Sources */,
 				0DFE83B129F02B8000E62715 /* LoginViewController.swift in Sources */,
 				0D7C791C29F2AA3A000CAE27 /* AppConstants.swift in Sources */,

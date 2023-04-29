@@ -5,12 +5,13 @@
     //  Created by Aleksei Permiakov on 19.04.2023.
     //
 
+import Combine
 import UIKit
-import Kingfisher
 
 final class UserViewController: UIViewController {
     
     private var viewModel: UserViewModelProtocol
+    private var subscriptions = Set<AnyCancellable>()
     
     lazy var cardContainerView: UIView = {
         let view = UIView()
@@ -69,9 +70,14 @@ final class UserViewController: UIViewController {
     private func setupWithViewModel() {
         setupTitleView()
         
-        profileImageView.kf.indicatorType = .activity
-        profileImageView.kf.setImage(with: URL(string: viewModel.userDetails.picture.large))
-        
+        viewModel.getProfileImage()
+            .sink { [weak self] image in
+                if let image = image as? UIImage {
+                    self?.profileImageView.image = image
+                }
+            }
+            .store(in: &subscriptions)
+
         let location = viewModel.userDetails.location
         addLabelToInfoStack(name: "Country", value: location.country)
         addLabelToInfoStack(name: "State", value: location.state)
